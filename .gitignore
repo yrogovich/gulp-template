@@ -1,4 +1,2 @@
 node_modules
 package-lock.json
-
- build/components/jquery.min.js

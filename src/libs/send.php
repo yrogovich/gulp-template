@@ -7,12 +7,12 @@ $message = '
                 <title>'.$subject.'</title>
             </head>
             <body>';
-				if(isset($_POST['name']) && $_POST['name'] !== '')
-					$message .= '<p>Имя: '.$_POST['name'].'</p>';   
-				if(isset($_POST['phone']) && $_POST['phone'] !== '')
-					$message .= '<p>Телефон: '.$_POST['phone'].'</p>';   
-				if(isset($_POST['email']) && $_POST['email'] !== '')
-					$message .= '<p>Email: '.$_POST['email'].'</p>';     
+				if(isset($_POST['user_name']) && $_POST['user_name'] !== '')
+					$message .= '<p>Имя: '.$_POST['user_name'].'</p>';   
+				if(isset($_POST['user_phone']) && $_POST['user_phone'] !== '')
+					$message .= '<p>Телефон: '.$_POST['user_phone'].'</p>';   
+				if(isset($_POST['user_email']) && $_POST['user_email'] !== '')
+					$message .= '<p>Email: '.$_POST['user_email'].'</p>';     
 $message .= '                 
             </body>
         </html>'; //Текст нащего сообщения можно использовать HTML теги

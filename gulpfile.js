@@ -39,7 +39,7 @@ const config = {
 		src: '/*.html'
 	},
 	php: {
-		src: '/*.html'
+		src: '/*.php'
 	}
 };
 
@@ -92,9 +92,9 @@ gulp.task('images', function() {
 // Libs
 gulp.task('components', function() {
   return gulp
-  	.src('src/components/**/*')
+  	.src('src/libs/**/*')
   	.pipe(browserSync.stream())
-    .pipe(gulp.dest('build/components'))
+    .pipe(gulp.dest('build/libs'))
     .pipe(notify({ message: 'Libs task complete' }));
 });
 
@@ -121,7 +121,7 @@ gulp.task('php', function() {
 // Clean
 gulp.task('clean', function() {
   return gulp
-  	.src(['build/styles', 'build/js', 'build/img'], {read: false})
+  	.src(['build'], {read: false})
     .pipe(clean());
 });
 

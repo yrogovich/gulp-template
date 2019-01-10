@@ -13,4 +13,4 @@ const settings = {
 	properties: []
 };
 
-smartgrid('./src/less/partials', settings);
+smartgrid('./src/less/vendors', settings);
